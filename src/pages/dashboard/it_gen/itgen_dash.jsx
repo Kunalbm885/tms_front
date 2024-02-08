@@ -1,40 +1,28 @@
 import {
-  Card,
   CardHeader,
   CardBody,
-  Typography,
-  Avatar,
   Chip,
-  Tooltip,
-  IconButton,
-  BellIcon,
-  ClockIcon,
-  CreditCardIcon,
-  Progress,
-  Input,
   Button,
   Tabs,
-  TabsHeader,
-  TabsBody,
-  TabPanel,
-  Tab,
-} from "@material-tailwind/react";
+  
 
+} from "@material-tailwind/react";
+import {
+  List,
+  ListItem,
+  ListItemPrefix,
+  Avatar,
+  Card,
+  Typography,
+} from "@material-tailwind/react";
 import { Textarea } from "@material-tailwind/react";
 import { EllipsisVerticalIcon } from "@heroicons/react/24/outline";
 import { authorsTableData } from "@/data";
 import { usePDF } from 'react-to-pdf';
 
-import {
-  HomeIcon,
-  ChatBubbleLeftEllipsisIcon,
-  Cog6ToothIcon,
-  PencilIcon,
-} from "@heroicons/react/24/solid";
-
 import { useState } from "react";
 
-export function Access() {
+export function ItGenDash() {
     const [email, setEmail] = useState("");
   const onChange = ({ target }) => setEmail(target.value);
 
@@ -45,6 +33,24 @@ export function Access() {
     <div className="mt-12 mb-8 flex flex-col gap-12">
       <div className="w-full">
         <Tabs value="app" className="">
+
+        <Card className="w-96">
+      <List>
+        <ListItem>
+          <ListItemPrefix>
+            <Avatar variant="circular" alt="candice" src="https://docs.material-tailwind.com/img/face-1.jpg" />
+          </ListItemPrefix>
+          <div>
+            <Typography variant="h6" color="blue-gray">
+              Generate Time Table
+            </Typography>
+            <Typography variant="small" color="gray" className="font-normal">
+              The Time table that will be generated will use Genetic Algorithm
+            </Typography>
+          </div>
+        </ListItem>
+        </List>
+        </Card>
    
         </Tabs>
       </div>
@@ -168,4 +174,4 @@ export function Access() {
   );
 }
 
-export default Access;
+export default ItGenDash;

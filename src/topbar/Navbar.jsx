@@ -232,7 +232,7 @@ export function NavList({ isAuthenticated }) {
       <div className="hidden gap-2 lg:flex ml-10">
     
         <a href="/auth/sign-in">
-          <Button  className="bg-[#f22f46]" size="sm">
+          <Button  className="" size="sm">
             Login
           </Button>
         </a>
@@ -240,7 +240,7 @@ export function NavList({ isAuthenticated }) {
       <div className="hidden gap-2 lg:flex ml-10">
     
         <a href="/auth/sign-up">
-          <Button  className="bg-[#f22f46]" size="sm">
+          <Button  className="" size="sm">
             Register
           </Button>
         </a>
@@ -264,7 +264,7 @@ export function NavbarWeb({ isAuthenticated }) {
       <div className="flex items-center justify-between text-blue-gray-900">
       <img
       className="h-10  object-cover object-center"
-      src="../img/neepro.png"
+      src="../img/tms.png"
       alt="nature image"
     />
         <div className="hidden lg:block">

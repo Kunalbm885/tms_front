@@ -28,7 +28,7 @@ function Footer() {
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
         <img
       className="h-28  object-cover object-center"
-      src="../img/neepro.png"
+      src="../img/tms1.png"
       alt="nature image"
     />
           <div className="grid grid-cols-3 justify-between gap-4 text-white">

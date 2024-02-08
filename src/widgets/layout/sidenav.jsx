@@ -8,14 +8,9 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-import {
-  ArrowLeftOnRectangleIcon,
+import { ArrowLeftOnRectangleIcon } from "@heroicons/react/24/solid";
 
-} from "@heroicons/react/24/solid";
-
-
-
-import { Badge} from "@material-tailwind/react";
+import { Badge } from "@material-tailwind/react";
 import { useMaterialTailwindController, setOpenSidenav } from "@/context";
 
 export function Sidenav({ brandImg, brandName, routes }) {
@@ -31,17 +26,15 @@ export function Sidenav({ brandImg, brandName, routes }) {
     <aside
       className={`${sidenavTypes[sidenavType]} ${
         openSidenav ? "translate-x-0" : "-translate-x-80"
-      } fixed inset-0 z-50 my-4 ml-4 h-100vh w-72 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100`}
+      } h-100vh fixed inset-0 z-50 my-2 ml-4 w-72 rounded-xl border border-blue-gray-100 transition-transform duration-300 xl:translate-x-0 overflow-y-auto`}
     >
-
-      <div className="text-center m-4 mb-8">
-      <Avatar src="/img/tt_img.jpg" className="h-full text-center mx-auto m-4 w-32 "/>
-      <h4 className="m-2 text-lg leading-tight text-white">
-Rohit Bharve          </h4>
-      <h6 className="m-2 text-md leading-tight text-white">
-            INFT (IT Gen)
-          </h6>
-  
+      <div className="m-4 mb-8 text-center">
+        <Avatar
+          src="/img/tt_img.jpg"
+          className="m-4 mx-auto h-full w-32 text-center "
+        />
+        <h3 className="m-2 text-lg leading-tight text-black">Rohit Bharve </h3>
+        <h6 className="text-sm m-2 leading-tight text-black">INFT (IT Gen)</h6>
       </div>
       <div className="m-4">
         {routes.map(({ layout, title, pages }, key) => (
@@ -85,28 +78,23 @@ Rohit Bharve          </h4>
                 </NavLink>
               </li>
             ))}
-
           </ul>
         ))}
         <hr className="my-2 border-blue-gray-50" />
 
         <Button
-                      
-                      className="flex items-center gap-4 px-4 capitalize mt-8"
-                      fullWidth
-                    >
-                      <ArrowLeftOnRectangleIcon
-                      className="flex w-6"/>
+          variant="outlined"
+          className=" flex items-center gap-4 px-4 capitalize"
+          fullWidth
+        >
+          <ArrowLeftOnRectangleIcon className="flex w-6" />
 
-<Link to="/">
-                      <Typography
-                        color="inherit"
-                        className="font-medium capitalize"
-                      >
-                        Logout
-                      </Typography>
-                      </Link>
-                    </Button>
+          <Link to="/">
+            <Typography color="inherit" className="font-medium capitalize">
+              Logout
+            </Typography>
+          </Link>
+        </Button>
       </div>
     </aside>
   );

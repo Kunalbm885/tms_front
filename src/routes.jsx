@@ -7,7 +7,8 @@ import {
   UserPlusIcon,
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
-import Access from "./pages/dashboard/access";
+import ItGenDash from "./pages/dashboard/it_gen/itgen_dash";
+import GenTt from "./pages/dashboard/it_gen/gentt";
 import { SignIn, SignUp } from "@/pages/auth";
 
 const icon = {
@@ -20,9 +21,15 @@ export const routes = [
     pages: [
       {
         icon: <HomeIcon {...icon} />,
-        name: "ManageAccess",
+        name: "Dashboard",
         path: "/home",
-        element: <Access />,
+        element: <ItGenDash />,
+      },
+      {
+        icon: <UserCircleIcon {...icon} />,
+        name: "Generate Timetbale",
+        path: "/gentt",
+        element: <GenTt />,
       },
       {
         icon: <UserCircleIcon {...icon} />,

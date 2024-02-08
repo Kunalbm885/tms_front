@@ -17,21 +17,21 @@ export function MainPage() {
           <div className="flex justify-center gap-12">
             <div className="flex flex-col justify-center">
               <Typography variant="h1" color="blue-gray">
-                Welcome to NEEPCO Procurement & Payment Portal
+              Welcome to TMS Timetable Generation Portal
               </Typography>
               <Typography
                 variant="h4"
                 color="blue-gray"
                 className="mt-5 font-normal"
               >
-                NEEPCO's Transparent Procurement & Payment Universe
+               TMS's Transparent Timetable Generation Universe
               </Typography>
               <Typography variant="h5" color="blue-gray" className="font-light">
-                Unlock the Power of Data
+                Unlock the Power of Technology
               </Typography>
               <div className="mt-5  hidden lg:flex">
                 <a href="">
-                  <Button className="bg-[#f22f46] px-10" size="sm">
+                  <Button className=" px-10" size="sm">
                     Login
                   </Button>
                 </a>
@@ -41,19 +41,19 @@ export function MainPage() {
             <div className="header_img relative">
               <img
                 className="relative z-10 h-96 w-full "
-                src="../img/Thermal (1).png"
+                src="../img/17725.jpg"
                 alt="nature image"
               />
             </div>
           </div>
         </section>
 
-        <section className="bg-[#f22f46]/90">
+        <section className="bg-[#616161]/90">
           <div className="flex flex-col lg:flex-row p-5 lg:px-40">
             <div className="w-100 p-10 text-center text-white">
               <Typography variant="h4">Efficiency</Typography>
               <Typography variant="p">
-                We help you optimize procurement and finance management, saving
+                We help you optimize generation and timetable management, saving
                 both time and resources.
               </Typography>
             </div>
@@ -61,8 +61,8 @@ export function MainPage() {
               <Typography variant="h4">Accuracy</Typography>
               <Typography variant="p">
                 {" "}
-                Our data analysis tools ensure precise decision-making and
-                budget planning.
+                Our algorithm and tool tools ensure precise decision-making and
+                timetable planning.
               </Typography>
             </div>
             <div className="w-100 p-10 text-center text-white">
